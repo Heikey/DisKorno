@@ -1,8 +1,9 @@
 class Base {
-    constructor(id = '') {
+    /**
+     * @param {String} id 
+     */
+    constructor(id) {
         this.id = id
     }
-
 }
-
 module.exports = Base

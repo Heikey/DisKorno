@@ -1,7 +1,5 @@
-const Base = require("./Base");
-
-class Role extends Base {
-    constructor(data){
+const Base = require("./Base");class Role extends Base {
+    constructor(data,client){
         super(data.id)
         this.name = data.name
         this.color = data.color
@@ -16,6 +14,4 @@ class Role extends Base {
         this.integrationOwned = data.integration_id
         this.nitroOwned = data.premium_subscriber
     }
-}
-
-module.exports = Role
+}module.exports = Role

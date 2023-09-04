@@ -1,8 +1,6 @@
 const Base = require("./Base");
-const User = require("./User");
-
-class Member extends Base {
-    constructor(data) {
+const User = require("./User");class Member extends Base {
+    constructor(data,client) {
         super(data.id);
         this.user = new User(data.user)
         this.nick = data.nick || ''

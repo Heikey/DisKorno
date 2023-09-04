@@ -1,7 +1,6 @@
 const Base = require("./Base")
-
 class User extends Base {
-    constructor(data) {
+    constructor(data, client) {
         super(data.id)
         this.username = data.username
         this.discriminator = data.discriminator
@@ -15,6 +14,4 @@ class User extends Base {
         this.flags = data.flags
         this.nitro = data.premium_type
     }
-}
-
-module.exports = User
+} module.exports = User
